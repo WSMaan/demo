@@ -9,18 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/shipment")
 public class ShipLabels {
 
-    private long shipmentId;
+    private String shipmentId;
     private String serviceCode;
     private String serviceLevel;
     private String issuerCode;
     private String consignorId;
     private String consigneeId;
 
-    public long getShipmentId() {
+    public String getShipmentId() {
         return shipmentId;
     }
 
-    public void setShipmentId(long shipmentId) {
+    public void setShipmentId(String shipmentId) {
         this.shipmentId = shipmentId;
     }
     public String getServiceCode() {
